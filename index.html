@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Чупров Артём — портфолио</title>
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#0f0a1f; --bg2:#171030; --card:#1d1540; --line:#33265f;
+  --text:#ece7fb; --muted:#a79cc9; --accent:#a78bfa; --accent2:#7c3aed;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1100px 480px at 75% 0,rgba(124,58,237,.35),transparent 70%) no-repeat,var(--bg);color:var(--text);
+  font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:20px;justify-content:flex-end;padding:20px 0;font-size:.95rem;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{padding:56px 0 72px}
+.tag{display:inline-block;padding:4px 14px;border:1px solid var(--line);border-radius:99px;color:var(--accent);font-size:.85rem}
+h1{font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.1;margin:18px 0 12px}
+h1 span{background:linear-gradient(90deg,#c4b5fd,#7c3aed);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:600px;color:var(--muted);font-size:1.1rem}
+section{padding:48px 0}
+h2{font-size:1.6rem;margin:0 0 24px}
+h2::after{content:"";display:block;width:48px;height:3px;margin-top:8px;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{margin:0 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.chip{background:var(--bg2);border:1px solid var(--line);color:var(--accent);padding:6px 16px;border-radius:99px;font-size:.95rem}
+.ico{font-size:1.6rem;margin-bottom:8px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center;font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#education">Образование</a>
+    <a href="#achievements">Достижения</a>
+    <a href="#skills">Навыки</a>
+  </nav>
+
+  <header class="hero">
+    <span class="tag">Студент · Прикладной анализ данных и ИИ</span>
+    <h1>Чупров <span>Артём</span> Николаевич</h1>
+    <p class="lead">Мне 18 лет. Увлекаюсь программированием, математикой и искусственным интеллектом. Учусь в НИУ ВШЭ в Санкт-Петербурге.</p>
+  </header>
+
+  <section id="about">
+    <h2>Обо мне</h2>
+    <div class="grid">
+      <div class="card"><div class="ico">🎂</div><h3>Дата рождения</h3><p>20 октября 2008 года</p></div>
+      <div class="card"><div class="ico">📍</div><h3>Откуда</h3><p>Республика Коми, сейчас живу и учусь в Санкт-Петербурге</p></div>
+      <div class="card"><div class="ico">🌐</div><h3>Языки</h3><p>Русский — родной, английский — владею</p></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Образование</h2>
+    <div class="card">
+      <h3>НИУ ВШЭ — Санкт-Петербург</h3>
+      <p>Бакалавриат, 1 курс. Направление: «Прикладной анализ данных и искусственный интеллект».</p>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Достижения</h2>
+    <div class="grid">
+      <div class="card"><div class="ico">🏆</div><h3>Информатика</h3><p>Призёр регионального этапа Всероссийской олимпиады школьников, Республика Коми</p></div>
+      <div class="card"><div class="ico">🏆</div><h3>Математика</h3><p>Призёр регионального этапа Всероссийской олимпиады школьников, Республика Коми</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Навыки</h2>
+    <div class="card">
+      <h3>Программирование</h3>
+      <div class="chips"><span class="chip">Python</span><span class="chip">C++</span></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h3>Языки</h3>
+      <div class="chips"><span class="chip">Русский</span><span class="chip">English</span></div>
+    </div>
+  </section>
+</div>
+<footer>© 2026 Чупров Артём Николаевич</footer>
+</body>
+</html>
